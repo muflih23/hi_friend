@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.logo img{
+    width: 300px;
+    height: auto;
+    margin-left: 500px;
+}
+
+nav{
+    background-image: url(/img/hike.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+form{
+    margin-top: auto;
+    margin-left: 34px;
+}
+
+input{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: -40px;
+}
+
+p a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #00bb31;
+    font-weight: bold;
+}
+
+input[type=submit]{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00bb31;
+    background: #fff;
+    margin-top: 20px;
+    border: 2px solid #00bb31;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[type=submit]:hover{
+    color: #fff;
+    background: #00bb31;
+    box-shadow: 4px 4px 15px -4px rgba(0, 224, 60, 1);
+}
+
+.signup{
+    margin-left: 475px;
+    border: 20px solid #00bb31;
+    height: auto;
+    width: 350px;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+}
