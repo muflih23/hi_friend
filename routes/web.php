@@ -23,5 +23,11 @@ Route::post('/register', 'WelcomePage@addUser')->name('register');
 
 Route::get('/home','WelcomePage@home')->name('home');
 
+Route::get('/guide','GuideController@guideView');
+
+Route::get('/tipsandtricks', 'TipsAndTrickController@tntview');
+
+Route::get('/mounts', 'MountController@mountview');
+
 //Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');

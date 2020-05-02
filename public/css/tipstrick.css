@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+    background-image: url(/img/hike.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 120px;
+}
+
+ul li {
+    margin-top: 80px;
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.logo img {
+    float: left;
+    width: 300px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.menu::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    margin-top: 3px;
+    background: #00bb31;
+    transition: width 0.5s;
+}
+
+.menu:hover::after {
+    width: 100%;
+    transition: width 0.5s;
+}
+
+.login::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 5px;
+    margin-top: 3px;
+    background: #00bb31;
+}
+
+.login:hover::after {
+    width: 100%;
+    transition: width .5s;
+}
+
+.signup:hover a {
+    color: white;
+}
+
+.signup:hover {
+    background: #00bb31;
+}
+
+.login {
+    margin-left: 10px;
+    border-left: 5px solid gray;
+    padding-left: 15px;
+}
+
+.signup {
+    border: 1px solid #00bb31;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 15px -4px rgba(0, 224, 60, 1);
+}
+
+.popup {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    border: 20px solid #00bb31;
+    height: auto;
+    width: 350px;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+form {
+    margin-top: auto;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border: 1px solid gray;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00bb31;
+    background: #fff;
+    margin-top: 20px;
+    border: 2px solid #00bb31;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    color: #fff;
+    background: #00bb31;
+    box-shadow: 4px 4px 15px -4px rgba(0, 224, 60, 1);
+}
+
+p a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #00bb31;
+    font-weight: bold;
+}
+
+.close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px -4px rgba(0, 224, 60, 1);
+    cursor: pointer;
+}
+
+.popup-login {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content-login {
+    border: 20px solid #00bb31;
+    height: auto;
+    width: 350px;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    position: relative;
+}
+
+.close-login {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 15px -4px rgba(0, 224, 60, 1);
+    cursor: pointer;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 1200px;
+    height: 500px;
+    background: rgba(71, 71, 71, 0.3)
+}
+
+.container .box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(500px - 30px);
+    background: #fff;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 1px solid #474747;
+    box-shadow: 4px 4px 15px -4px rgba(0, 224, 60, 1);
+    float: left;
+    margin: 15px;
+}
+
+.container .box .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(44, 123, 241);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.icon img {
+    position: absolute;
+    width: 370px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .box:hover .icon {
+    left: calc(30% - 111px);
+    width: 370px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .box .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+}
+
+.container .box .content p {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.container .box .content {
+    position: absolute;
+    top: 700px;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .box:hover .content {
+    top: 200px;
+    opacity: 1;
+}
+
+.container .box .content h3 {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    text-align: left;
+    padding: 10px;
+}
+
+.content p a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #00bb31;
+    font-weight: bold;
+}
