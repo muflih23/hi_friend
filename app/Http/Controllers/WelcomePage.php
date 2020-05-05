@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Hash;
+use Session;
  
 class WelcomePage extends Controller
 {
@@ -17,16 +19,36 @@ class WelcomePage extends Controller
         return view('welcomepage/home');
     }
 
+
     public function login(Request $request)
     {
-       if (\Auth::attempt(['email' => $request->login_email, 'password' => $request->login_password]))
+        $email = $request->login_email;
+        $password = $request->login_password;
+
+        $dataLogin = User::where('email',$email)->first();
+        if($dataLogin) 
+        {
+            if(Hash::check($password, $dataLogin->password))
+            {
+                Session::put('name',$dataLogin->name);
+                Session::put('login', TRUE);
+                return redirect()->route('home');
+            }
+            else
+            {
+                return('login gagal');
+            }
+        }
+
+
+      /* if (\Auth::attempt(['email' => $request->login_email, 'password' => $request->login_password]))
        {
            return redirect()->route('home');
        }
        else
        {
            return ('login gagal');
-       }
+       }*/
 
 
        //dump testing
@@ -37,6 +59,12 @@ class WelcomePage extends Controller
         //dd($credentials); */
 
 
+    }
+
+    public function logout()
+    {
+        Session::flush();
+        return redirect()->route('selamatDatang');
     }
 
     public function register()

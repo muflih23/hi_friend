@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'WelcomePage@index');
+Route::get('/', 'WelcomePage@index')->name('selamatDatang');
 
 Route::get('/#', 'WelcomePage@login');
 Route::post('/login', 'WelcomePage@login')->name('masuk');
+
+Route::get('/logout', 'WelcomePage@logout');
 
 Route::get('/register', 'WelcomePage@register');
 Route::post('/register', 'WelcomePage@addUser')->name('register');
