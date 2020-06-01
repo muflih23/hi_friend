@@ -26,10 +26,15 @@ Route::post('/register', 'WelcomePage@addUser')->name('register');
 Route::get('/home','WelcomePage@home')->name('home');
 
 Route::get('/guide','GuideController@guideView');
+Route::get('/u_guide', 'GuideController@u_guideView');
 
 Route::get('/tipsandtricks', 'TipsAndTrickController@tntview');
+Route::get('/u_tipsandtricks', 'TipsAndTrickController@u_tntview');
 
 Route::get('/mounts', 'MountController@mountview');
+Route::get('/u_mounts', 'MountController@u_mountview');
+
+
 
 //Auth::routes();
 //Route::get('/home', 'HomeController@index')->name('home');

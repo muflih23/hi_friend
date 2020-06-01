@@ -10,4 +10,9 @@ class TipsAndTrickController extends Controller
     {
         return view('welcomepage/tnt');
     }
+
+    public function u_tntview()
+    {
+        return view('homepage/user_tnt');
+    }
 }

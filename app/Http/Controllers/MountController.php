@@ -10,4 +10,9 @@ class MountController extends Controller
     {
         return view('welcomepage/mounts');
     }
+
+    public function u_mountview()
+    {
+        return view('homepage/user_mounts');
+    }
 }

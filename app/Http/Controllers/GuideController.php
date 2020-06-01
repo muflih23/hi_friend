@@ -10,4 +10,9 @@ class GuideController extends Controller
     {
         return view('welcomepage/guide');
     }
+
+    public function u_guideView()
+    {
+        return view('homepage/user_guide');
+    }
 }
