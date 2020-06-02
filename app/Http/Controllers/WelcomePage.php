@@ -36,7 +36,7 @@ class WelcomePage extends Controller
             }
             else
             {
-                return('login gagal');
+                return redirect('/') -> with('alert', 'Email atau password salah!');
             }
         }
 

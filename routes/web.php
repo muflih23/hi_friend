@@ -34,6 +34,9 @@ Route::get('/u_tipsandtricks', 'TipsAndTrickController@u_tntview');
 Route::get('/mounts', 'MountController@mountview');
 Route::get('/u_mounts', 'MountController@u_mountview');
 
+Route::get('/store', 'MountController@mountview');
+Route::get('/u_store', 'StoreController@u_storeview');
+
 
 
 //Auth::routes();

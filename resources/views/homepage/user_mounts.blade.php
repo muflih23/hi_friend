@@ -19,7 +19,7 @@
                 <li class="menu"><a href=" ">Mount In Indonesia</a></li>
                 <li class="menu"><a href="/u_tipsandtricks">Tips & Trick</a></li>
                 <li class="menu"><a href=" ">Critical Action</a></li>
-                <li class="menu"><a href=" ">Store</a></li>
+                <li class="menu"><a href="/u_store">Store</a></li>
                 <li class="signup" id="button"><a href="/logout">Log Out</a></li>
             </b></ul>
         </div>
@@ -42,21 +42,45 @@
     </nav>
 
     <div class="search">
-        <h1> Find Your Next Hiking Trip</h1>
         <input type="text" name="box" placeholder="Find your destination">
-        <a href=" "><img src="/img/search.png"></a>
+        <a href="/img/mount_search.html"><img src="/img/search.png"></a>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVkqzlffwSBmTKgQmCNwRJGCwqHZwBdJKszqGDDJKMKHJGlVGJzlMNwhdvbktnqqVRVpFC"><img src="/img/gunung_1.jpg" class="gambar"></a>
+            <h3>Gunung Bromo</h3>
+            <h5>Probolinggo, East Java, Indonesia</h5>
+            <p>Rating (4,5)</p>
+            </h3>
+        </div>
+
+        <div class="box1">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVkqzlffwSBmTKgQmCNwRJGCwqHZwBdJKszqGDDJKMKHJGlVGJzlMNwhdvbktnqqVRVpFC"><img src="/img/gunung_2.jpg" class="gambar"></a>
+            <h3>Gunung Bromo</h3>
+            <h5>Probolinggo, East Java, Indonesia</h5>
+            <p>Rating (4,5)</p>
+            </h3>
+        </div>
+
+        <div class="box2">
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMVkqzlffwSBmTKgQmCNwRJGCwqHZwBdJKszqGDDJKMKHJGlVGJzlMNwhdvbktnqqVRVpFC"><img src="/img/gunung_3.jpg" class="gambar"></a>
+            <h3>Gunung Bromo</h3>
+            <h5>Probolinggo, East Java, Indonesia</h5>
+            <p>Rating (4,5)</p>
+            </h3>
+        </div>
     </div>
 
     <script>
-        document.getElementById("button-login").addEventListener("click", function(){
+        document.getElementById("button-login").addEventListener("click", function() {
             document.querySelector(".popup-login").style.display = "flex";
-            document.querySelector(".search").style.display = "none";
         })
 
-        document.getElementById("close-login").addEventListener("click", function(){
-            document.querySelector(".search").style.display="absolute";
+        document.getElementById("close-login").addEventListener("click", function() {
             document.querySelector(".popup-login").style.display = "none";
         })
     </script>
 </body>
+
 </html>

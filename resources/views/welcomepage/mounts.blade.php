@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Home page</title>
-    <link rel="stylesheet" href="/css/mount_indonesia.css">
+    <link rel="stylesheet" href="/css/guide.css">
 </head>
 <body>
     <nav>
@@ -16,7 +16,7 @@
                 <li class="menu"><a href=" ">Mount In Indonesia</a></li>
                 <li class="menu"><a href="/tipsandtricks">Tips & Trick</a></li>
                 <li class="menu"><a href=" ">Critical Action</a></li>
-                <li class="menu"><a href=" ">Store</a></li>
+                <li class="menu"><a href="/">Store</a></li>
                 <li class="login" id="button-login"><a href="#">Login</a></li>
                 <li class="signup" id="button"><a href="/register">Sign Up</a></li>
             </b></ul>
@@ -39,10 +39,8 @@
         </div>
     </nav>
 
-    <div class="search">
-        <h1> Find Your Next Hiking Trip</h1>
-        <input type="text" name="box" placeholder="Find your destination">
-        <a href=" "><img src="/img/search.png"></a>
+    <div class="container">
+        <h3>Oops, maaf kamu harus login terlebih dahulu untuk mengakses fitur ini</h3>
     </div>
 
     <script>

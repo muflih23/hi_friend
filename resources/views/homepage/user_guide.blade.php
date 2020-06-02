@@ -20,7 +20,7 @@
                 <li class="menu"><a href="/u_mounts">Mount In Indonesia</a></li>
                 <li class="menu"><a href="/u_tipsandtricks">Tips & Trick</a></li>
                 <li class="menu"><a href="">Critical Action</a></li>
-                <li class="menu"><a href="">Store</a></li>
+                <li class="menu"><a href="/u_store">Store</a></li>
                 <li class="signup" id="button"><a href="/logout">Log Out</a></li>
             </b></ul>
         </div>
